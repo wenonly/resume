@@ -35,4 +35,4 @@
 
 ## 项目来源
 
-[https://github.com/BingyanStudio/LapisCV](https://github.com/BingyanStudio/LapisCV)"# resume" 
+[https://github.com/BingyanStudio/LapisCV](https://github.com/BingyanStudio/LapisCV)
