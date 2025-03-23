@@ -3,7 +3,21 @@
 ## 使用方法
 
 1. 在 VSCode 中打开该文件夹，并安装插件 Markdown PDF。
-2. 打开模版文件 template.md 进行内容编辑，右上角点击 Open Preview 图标可进行实时预览。右键选择 Markdown PDF - Export (pdf) 即可导出 PDF 文件。
+2. VSCode 顶层需加配置 .vscode > settings.json 配置文件，配置如下：
+```json
+{
+    "markdown.styles": [
+        "./resume/lapis-cv.css" // 对应项目的样式文件
+    ],
+    "markdown-pdf.headerTemplate": "",
+    "markdown-pdf.footerTemplate": "",
+    "markdown-pdf.displayHeaderFooter": false,
+    "markdown-pdf.margin.top": "1cm",
+    "markdown-pdf.margin.right": "1cm",
+    "markdown-pdf.margin.left": "1cm"
+}
+```
+3. 打开模版文件 template.md 进行内容编辑，右上角点击 Open Preview 图标可进行实时预览。右键选择 Markdown PDF - Export (pdf) 即可导出 PDF 文件。
 
 ## 自定义样式
 
