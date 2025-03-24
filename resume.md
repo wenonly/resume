@@ -13,13 +13,13 @@
 
 ## 专业技能
 
-- **掌握前端基础技术**：包括 HTML、CSS、JavaScript、TypeScript 等。
-- **掌握主流前端框架**：包括 React、Vue，有丰富的实践经验和最佳实践积累。
+- **掌握前端基础技术**：熟悉前端基础知识，包括 HTML、CSS、JavaScript、TypeScript 等。
+- **掌握主流前端框架**：熟悉 React、Vue 等主流框架，有丰富的实践经验和最佳实践积累。
 - **深入理解前端工程化**：熟练使用 Webpack、Vite 等构建工具，具备组件库开发和工程化配置经验。
-- **具备全栈开发能力**：能够基于 Node.js、NestJS 构建后端服务，具有中间层架构设计经验。
-- **DevOps 实践经验**：运用 Docker 容器化技术和 Jenkins 持续集成，实现自动化部署流程。
+- **具备全栈开发能力**：熟练使用 Node.js、NestJS 构建后端服务，具有中间层架构设计经验。
+- **DevOps 实践经验**：熟练运用 Docker 容器化技术和 Jenkins 持续集成，实现自动化部署流程。
 - **数据可视化开发**：具有 ECharts、AntV 等可视化库的使用经验，具备大屏项目、流程编排工具开发经验。
-- **跨端开发经验**：微信小程序、Uniapp、React Native、Electron等多端开发经验。
+- **跨端开发经验**：具有 微信小程序、Uniapp、React Native、Electron 等多端开发经验。
 
 ## 工作经验
 
