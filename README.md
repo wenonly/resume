@@ -33,6 +33,14 @@
 搜索 Markdown-pdf › Margin，并修改四边边距。
 无需重启 VSCode，重新生成 PDF 即可生效。
 
-## 项目来源
+## 直接编译
+
+```bash
+pnpm install
+pnpm run build
+```
+编译后会生成 resume.pdf 文件。
+
+## 项目参考
 
 [https://github.com/BingyanStudio/LapisCV](https://github.com/BingyanStudio/LapisCV)
