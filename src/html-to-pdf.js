@@ -1,7 +1,6 @@
-const puppeteer = require('puppeteer-core');
-const fs = require('fs');
-const path = require('path');
-
+const puppeteer = require("puppeteer");
+const fs = require("fs");
+const path = require("path");
 /**
  * Convert HTML content to PDF file
  * @param {string} htmlContent - The HTML content to convert
@@ -24,56 +23,75 @@ const path = require('path');
  * @returns {Promise<string>} Path to the generated PDF file
  */
 async function convertHtmlToPdf(htmlContent, options) {
-    // Create temporary HTML file
-    const tmpDir = path.dirname(options.outputPath);
-    const tmpHtmlPath = path.join(tmpDir, `tmp_${Date.now()}.html`);
-    fs.writeFileSync(tmpHtmlPath, htmlContent);
+  // Create temporary HTML file
+  const tmpDir = path.dirname(options.outputPath);
+  const tmpHtmlPath = path.join(tmpDir, `tmp_${Date.now()}.html`);
+  fs.writeFileSync(tmpHtmlPath, htmlContent);
 
-    try {
-        // Launch browser
-        const browser = await puppeteer.launch({
-            executablePath: options.executablePath || await puppeteer.executablePath(),
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
-        });
-
-        const page = await browser.newPage();
-        await page.setDefaultTimeout(0);
-        await page.goto(`file://${tmpHtmlPath}`, { waitUntil: 'networkidle0' });
-
-        // Prepare PDF options
-        const pdfOptions = {
-            path: options.outputPath,
-            scale: options.scale || 1,
-            displayHeaderFooter: options.displayHeaderFooter || false,
-            headerTemplate: options.headerTemplate || '',
-            footerTemplate: options.footerTemplate || '',
-            printBackground: options.printBackground || false,
-            landscape: options.landscape || false,
-            pageRanges: options.pageRanges || '',
-            format: options.format || 'A4',
-            margin: {
-                top: options.margin?.top || '',
-                right: options.margin?.right || '',
-                bottom: options.margin?.bottom || '',
-                left: options.margin?.left || ''
-            }
-        };
-
-        // Generate PDF
-        await page.pdf(pdfOptions);
-        await browser.close();
-
-        // Clean up temporary file
-        fs.unlinkSync(tmpHtmlPath);
-
-        return options.outputPath;
-    } catch (error) {
-        // Clean up temporary file in case of error
-        if (fs.existsSync(tmpHtmlPath)) {
-            fs.unlinkSync(tmpHtmlPath);
-        }
-        throw error;
+  try {
+    // 判断浏览器路径是否存在，不存在则通过命令行安装 Chrome
+    const executablePath = options.executablePath || puppeteer.executablePath();
+    console.log("executablePath", executablePath);
+    if (!fs.existsSync(executablePath)) {
+      const { execSync } = require("child_process");
+      try {
+        console.log("正在安装 Puppeteer...");
+        const installPath = path.join(
+          __dirname,
+          "../node_modules/puppeteer/install.mjs",
+        );
+        execSync(`node ${installPath}`, { stdio: "inherit" });
+      } catch (installError) {
+        console.error("Puppeteer 安装失败，将使用系统 Chrome");
+      }
     }
+
+    // Launch browser
+    const browser = await puppeteer.launch({
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      headless: false,
+      product: "chrome",
+      executablePath: executablePath,
+    });
+
+    const page = await browser.newPage();
+    await page.setDefaultTimeout(0);
+    await page.goto(`file://${tmpHtmlPath}`, { waitUntil: "networkidle0" });
+
+    // Prepare PDF options
+    const pdfOptions = {
+      path: options.outputPath,
+      scale: options.scale || 1,
+      displayHeaderFooter: options.displayHeaderFooter || false,
+      headerTemplate: options.headerTemplate || "",
+      footerTemplate: options.footerTemplate || "",
+      printBackground: options.printBackground || true,
+      landscape: options.landscape || false,
+      pageRanges: options.pageRanges || "",
+      format: options.format || "A4",
+      margin: {
+        top: options.margin?.top || "1cm",
+        right: options.margin?.right || "1cm",
+        bottom: options.margin?.bottom || "",
+        left: options.margin?.left || "1cm",
+      },
+    };
+
+    // Generate PDF
+    await page.pdf(pdfOptions);
+    await browser.close();
+
+    // Clean up temporary file
+    fs.unlinkSync(tmpHtmlPath);
+
+    return options.outputPath;
+  } catch (error) {
+    // Clean up temporary file in case of error
+    if (fs.existsSync(tmpHtmlPath)) {
+      fs.unlinkSync(tmpHtmlPath);
+    }
+    throw error;
+  }
 }
 
 module.exports = convertHtmlToPdf;
