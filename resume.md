@@ -64,10 +64,10 @@
 5. 负责AI对话功能的开发，包括前端界面设计和交互逻辑实现，实现Markdwon文本的不同组件渲染设计，提升了用户体验。
 
 <div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
-    <h3>监狱综合可视化管理项目</h3> <span style="text-align: right">2021.10-至今</span>
+    <h3>综合评估可视化管理项目</h3> <span style="text-align: right">2021.10-至今</span>
 </div>
 
-- **项目概述**：该项目结合华西提供的算法，通过对监狱人员信息进行收集、统计和预测，实现对监狱人员的管理。
+- **项目概述**：该项目结合第三方提供的算法，通过对人员信息进行收集、统计和预测，实现对人员的管理。
 - **技术栈**：Umi、Antd、Typescript、React、Nodejs、Nestjs
 
 1. 负责前端项目全流程工作，包括工程化环境搭建、功能开发、性能优化及维护升级，确保项目稳定运行。
@@ -81,10 +81,10 @@
 9. 通过路由懒加载和组件按需加载，将首屏加载时间减少50%，通过预加载手段将表单加载时间从10秒优化至1秒。
 
 <div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
-    <h3>慧心系统可视化大屏项目</h3> <span style="text-align: right">2022.10-2023.10</span>
+    <h3>综合评估可视化大屏项目</h3> <span style="text-align: right">2022.10-2023.10</span>
 </div>
 
-- **项目概述**：基于 ECharts 开发的数据可视化大屏，展示监狱综合管理系统的核心数据和统计指标。
+- **项目概述**：基于 ECharts 开发的数据可视化大屏，展示 综合评估可视化管理项目 的核心数据和统计指标。
 - **技术栈**：React、Echarts、Typescript、Nodejs、Nestjs
 
 1. 负责项目前端架构搭建，抽离封装通用组件和Hooks库。
