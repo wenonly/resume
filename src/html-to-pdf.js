@@ -72,7 +72,7 @@ async function convertHtmlToPdf(htmlContent, options) {
       margin: {
         top: options.margin?.top || "1cm",
         right: options.margin?.right || "1cm",
-        bottom: options.margin?.bottom || "",
+        bottom: options.margin?.bottom || "1cm",
         left: options.margin?.left || "1cm",
       },
     };

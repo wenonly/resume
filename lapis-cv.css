@@ -132,6 +132,9 @@ p {
 }
 
 @media print {
+  body {
+    padding-bottom: 15mm;
+  }
   h1,
   h2,
   h3,

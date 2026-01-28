@@ -4,7 +4,7 @@
 
 ## 基本信息
 
-- **年龄：** 27岁
+- **年龄：** 28岁
 - **所在地：** 四川成都
 - **工作年限：** 6年
 - **求职意向：** 前端开发
@@ -20,11 +20,22 @@
 - **DevOps 实践经验**：熟练运用 Docker 容器化技术和 Jenkins 持续集成，实现自动化部署流程。
 - **数据可视化开发**：具有 ECharts、AntV 等可视化库的使用经验，具备大屏项目、流程编排工具开发经验。
 - **跨端开发经验**：具有 微信小程序、Uniapp、React Native、Electron 等多端开发经验。
+- **掌握微前端架构**：掌握 Qiankun 微前端框架，具有微前端项目搭建、通信层设计和多端代码复用的实践经验。
 
 ## 工作经验
 
 <div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
-    <h3>成都索贝数码科技股份有限公司 - 前端开发工程师（3年）</h3> <span style="text-align: right">2021.06 - 至今</span>
+    <h3>123 云盘 - PC 前端开发工程师</h3> <span style="text-align: right">2025.08 - 至今</span>
+</div>
+
+- **负责 PC 端、Web 端、H5 端及 App 嵌套 H5 的前端开发**，采用 React + Webpack 技术栈，覆盖多端业务场景。
+- **使用 Qiankun 微前端架构**，负责账号安全类独立项目搭建，实现多端（App、PC、Web）代码复用和统一通信。
+- **使用 Electron webview 技术实现 PC 端嵌入 Web 端**，基于 Electron webview 技术实现跨端架构统一，提升代码复用率。
+- **负责 App 嵌套 H5 技术方案落地**，使用 H5 替代原生开发核心页面，解决混合开发场景下的技术难题，提升迭代效率。
+- **负责部分支付功能的对接与实现**，接入第三方支付 SDK，满足联运模式等多样化支付需求。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>成都索贝数码科技股份有限公司 - 前端开发工程师（4年）</h3> <span style="text-align: right">2021.06 - 2025.08</span>
 </div>
 
 - **主导多个核心项目的前端开发**，采用 React 和 Vue 技术栈，确保项目高质量交付。
@@ -51,7 +62,24 @@
 ## 项目经历
 
 <div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
-    <h3>AI会议系统</h3> <span style="text-align: right">2024.11 - 至今</span>
+    <h3>123云盘</h3> <span style="text-align: right">2025.08 - 至今</span>
+</div>
+
+- **项目概述**：负责 PC 端、Web 端、H5 端及 App 嵌套 H5 的多端前端开发，通过微前端架构和跨端技术方案，实现代码复用和快速迭代，降低维护成本。
+- **技术栈**：React、Webpack、Electron、Qiankun、TypeScript、Zustand、Ant Design
+
+1. 使用 Qiankun 微前端架构搭建账号安全独立项目，开发设备管理、登录记录、二次验证等功能，实现 App、PC、Web 三端代码复用。
+2. 设计并实现统一 Bridge 通信层，支持 App postMessage 和 Web/PC qiankun 两种通信模式，实现多端统一调用接口。
+3. 开发自定义 usePageModal Hook，统一管理页面跳转逻辑，简化多端路由跳转代码，提升开发效率。
+4. 负责 H5 与 Web 端样式适配，实现一套代码适配双端，确保多端视觉一致性。
+5. 使用 Electron webview 技术实现 PC 端嵌入 Web 端，通过渲染进程代理层解决主进程与 webview 通信问题。
+6. 优化 Qiankun 组件加载性能，采用提前渲染和事件驱动机制，显著提升微前端应用启动速度。
+7. 开发 HTTP 服务封装，支持 webview 本地运行场景，提升 PC 端内嵌页访问速度。
+8. 负责 App 嵌套 H5 页面开发，开发公共列表组件、公共hook，提升开发效率。
+9. 负责支付相关功能的 SDK 接入，支持联运模式等多种支付场景。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>AI会议系统</h3> <span style="text-align: right">2024.11 - 2025.8</span>
 </div>
 
 - **项目概述**：基于 Electron 开发的跨平台桌面会议系统，支持 AI 辅助会议记录和实时信息查询，自动生成会议总结。
@@ -61,10 +89,10 @@
 2. 对重复逻辑进行封装，开发useGlobalModal、useTreeLoad等多份自定义hook，提高开发效率和代码质量。
 3. 负责系统核心业务模块的样式开发与优化，利用AI优化页面主题，保证页面美观和结构清晰。
 4. 负责前后端接口对接工作，参与接口设计规划，完成接口联调测试，保证系统功能的稳定性和性能表现。
-5. 负责AI对话功能的开发，包括前端界面设计和交互逻辑实现，实现Markdwon文本的不同组件渲染设计，提升了用户体验。
+5. 负责AI对话功能的开发，包括前端界面设计和交互逻辑实现，实现Markdown文本的不同组件渲染设计，提升了用户体验。
 
 <div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
-    <h3>综合评估可视化管理项目</h3> <span style="text-align: right">2021.10-至今</span>
+    <h3>综合评估可视化管理项目</h3> <span style="text-align: right">2021.10-2025.8</span>
 </div>
 
 - **项目概述**：该项目结合第三方提供的算法，通过对人员信息进行收集、统计和预测，实现对人员的管理。
@@ -93,10 +121,10 @@
 4. 使用 NestJS 构建中间层服务，实现用户认证和接口代理功能。
 5. 采用多种前端优化手段，提升页面加载性能和用户体验。
 6. 设计大屏适配方案，使用 scale 缩放方案实现多分辨率自适应，支持4K显示器完美展示。
-7. 采用多种前端优化手段，包括图片懒加载、组件按需渲染等，首屏加载时间控制在2秒内。
+7. 采用图片懒加载、组件按需渲染等优化手段，首屏加载时间控制在2秒内。
 
 <div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
-    <h3>"表达"管理低代码平台</h3> <span style="text-align: right">2021.12-至今</span>
+    <h3>"表达"管理低代码平台</h3> <span style="text-align: right">2021.12-2025.8</span>
 </div>
 
 - **项目概述**：该项目可通过简单的页面配置，实现功能较完善的表单填报系统，提高效率并降低开发成本。
