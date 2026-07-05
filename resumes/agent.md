@@ -1,0 +1,158 @@
+# 陶文
+
+> 电话：`18048194609`&emsp;&emsp;邮箱：`1325772089@qq.com`
+
+## 基本信息
+
+- **年龄：** 29岁
+- **所在地：** 四川成都
+- **工作年限：** 7年
+- **求职意向：** AI Agent 全栈开发
+- **学历：** 西南科技大学 - 本科 - 计算机科学与技术 (2015.09 - 2019.07)
+- **主页：** [https://wenonly.github.io/kit/](https://wenonly.github.io/kit/)
+
+## 专业技能
+
+- **具备 AI Agent 应用开发能力**：熟悉 LangChain 等 Agent 开发框架，掌握多 Agent 编排、工具调用（Function Calling）、结构化记忆与 RAG、流式输出等核心能力，有 AI 智能体从设计到全栈落地的实践经验。
+- **具备全栈开发能力**：熟练使用 Next.js、Node.js、NestJS、Prisma、PostgreSQL 构建全栈应用，具有 AI 应用后端（流式接口、多模型路由、数据持久化）经验。
+- **掌握前端基础技术**：熟悉前端基础知识，包括 HTML、CSS、JavaScript、TypeScript 等。
+- **掌握主流前端框架**：熟悉 React、Vue 等主流框架，有丰富的实践经验和最佳实践积累。
+- **深入理解前端工程化**：熟练使用 Webpack、Vite 等构建工具，具备组件库开发和工程化配置经验。
+- **DevOps 实践经验**：熟练运用 Docker 容器化技术和 Jenkins 持续集成，实现自动化部署流程。
+- **数据可视化开发**：具有 ECharts、AntV 等可视化库的使用经验，具备大屏项目、流程编排工具开发经验。
+- **跨端开发经验**：具有 微信小程序、Uniapp、React Native、Electron 等多端开发经验。
+- **掌握微前端架构**：掌握 Qiankun 微前端框架，具有微前端项目搭建、通信层设计和多端代码复用的实践经验。
+
+## 工作经验
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>123 云盘 - PC 前端开发工程师</h3> <span style="text-align: right">2025.08 - 至今</span>
+</div>
+
+- **负责 PC 端、Web 端、H5 端及 App 嵌套 H5 的前端开发**，采用 React + Webpack 技术栈，覆盖多端业务场景。
+- **使用 Qiankun 微前端架构**，负责账号安全类独立项目搭建，实现多端（App、PC、Web）代码复用和统一通信。
+- **使用 Electron webview 技术实现 PC 端嵌入 Web 端**，基于 Electron webview 技术实现跨端架构统一，提升代码复用率。
+- **负责 App 嵌套 H5 技术方案落地**，使用 H5 替代原生开发核心页面，解决混合开发场景下的技术难题，提升迭代效率。
+- **负责部分支付功能的对接与实现**，接入第三方支付 SDK，满足联运模式等多样化支付需求。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>成都索贝数码科技股份有限公司 - 前端开发工程师（4年）</h3> <span style="text-align: right">2021.06 - 2025.08</span>
+</div>
+
+- **主导多个核心项目的前端开发**，采用 React 和 Vue 技术栈，确保项目高质量交付。
+- **优化前端架构和性能**，实现自动化构建部署，提升开发效率和用户体验。
+- **使用 NestJS 搭建前端服务中间层**，实现接口代理转发和统一认证。
+- **应用 CI/CD、Docker 容器化技术**，配置 Jenkins 自动化流程，简化研发流程。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>中清科华云联有限公司 - 前端开发工程师（1年）</h3> <span style="text-align: right">2020.06 - 2021.05</span>
+</div>
+
+- **负责公司内部管理平台开发**，使用 React 和 Vue 技术栈进行功能实现和维护。
+- **开发公司直播小程序和设备管理小程序**，实现蓝牙打印等硬件集成功能。
+- **优化构建流程**，使用 Webpack、Babel、ESLint 实现自动化构建和部署。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>北京优炫 - 前端工程师（1年）</h3> <span style="text-align: right">2019.03 - 2020.06</span>
+</div>
+
+- **负责公司前端项目开发**，使用 Vue 技术栈实现产品功能和用户体验优化。
+- **参与需求评审和技术方案设计**，确保项目可维护性和可扩展性。
+- **实现 RESTful API 接口对接**，使用 Mock.js 进行数据模拟，提升开发效率。
+
+## 项目经历
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>narratox — AI 长篇小说写作 Agent 平台（个人项目 · 已上线）</h3> <span style="text-align: right">2026.06 - 至今</span>
+</div>
+
+- **项目概述**：人机协作的 AI 长篇网文写作工作台，作者主导立项与故事走向，AI 负责写章、结算事实、维护长篇一致性，目标"让 AI 写长篇网文真实落地，写到第 200 章一致性不崩"。已部署上线（narratox.wenonly.cn）。
+- **技术栈**：Next.js 15、React 18、TypeScript、NestJS、Prisma、PostgreSQL、LangChain、LangGraph、deepagents、Docker
+
+1. **设计层级多 Agent 编排架构**：基于 deepagents 构建主 Agent → 章节编排子 Agent → writer/settler/validator 三个温度分层的子 Agent，分别负责正文生成、记忆结算、一致性校验，下沉到聚焦上下文可靠跑完"写 → 结算 → 校验（+修订）"全链。
+2. **实现结构化记忆层保障长篇一致性**：设计章节摘要（含角色变化与实体）与伏笔账本（OPEN/PROGRESSING/RESOLVED 生命周期）数据模型，每章自动结算维护；结合被动注入（前情 + 未回收伏笔）与主动检索（query_memory 工具），缓解长上下文下的事实遗忘。
+3. **构建质量闭环**：validator 多维结构化审计打分 + writer 定点修订 + snapshot/restore 快照回滚，支持必要时复校，保障章节质量。
+4. **设计多 Provider 模型路由**：支持 OpenAI / Anthropic / Gemini / GLM / DeepSeek 等，每用户在设置页配置与激活，API key 仅存服务端不落前端。
+5. **实现多租户安全隔离**：所有数据按用户 ID 作用域，userId/novelId 在工具构造时闭包注入，模型工具无法越权访问他人数据。
+6. **全栈开发与部署**：Next.js 15 实现小说库、三区写作工作台、模型设置等前端；NestJS + Prisma + PostgreSQL 实现 JWT 鉴权与业务 API；Docker Compose + Caddy 反代部署上线。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>123云盘</h3> <span style="text-align: right">2025.08 - 至今</span>
+</div>
+
+- **项目概述**：负责 PC 端、Web 端、H5 端及 App 嵌套 H5 的多端前端开发，通过微前端架构和跨端技术方案，实现代码复用和快速迭代，降低维护成本。
+- **技术栈**：React、Webpack、Electron、Qiankun、TypeScript、Zustand、Ant Design
+
+1. 使用 Qiankun 微前端架构搭建账号安全独立项目，开发设备管理、登录记录、二次验证等功能，实现 App、PC、Web 三端代码复用。
+2. 设计并实现统一 Bridge 通信层，支持 App postMessage 和 Web/PC qiankun 两种通信模式，实现多端统一调用接口。
+3. 开发自定义 usePageModal Hook，统一管理页面跳转逻辑，简化多端路由跳转代码，提升开发效率。
+4. 负责 H5 与 Web 端样式适配，实现一套代码适配双端，确保多端视觉一致性。
+5. 使用 Electron webview 技术实现 PC 端嵌入 Web 端，通过渲染进程代理层解决主进程与 webview 通信问题。
+6. 优化 Qiankun 组件加载性能，采用提前渲染和事件驱动机制，显著提升微前端应用启动速度。
+7. 开发 HTTP 服务封装，支持 webview 本地运行场景，提升 PC 端内嵌页访问速度。
+8. 负责 App 嵌套 H5 页面开发，开发公共列表组件、公共hook，提升开发效率。
+9. 负责支付相关功能的 SDK 接入，支持联运模式等多种支付场景。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>AI会议系统</h3> <span style="text-align: right">2024.11 - 2025.8</span>
+</div>
+
+- **项目概述**：基于 Electron 开发的跨平台桌面会议系统，支持 AI 辅助会议记录和实时信息查询，自动生成会议总结。
+- **技术栈**：React、TypeScript、Antd、Electron、Tailwindcss、Vite
+
+1. 实现自定义状态管理工具useModel，提升开发效率和代码质量。
+2. 对重复逻辑进行封装，开发useGlobalModal、useTreeLoad等多份自定义hook，提高开发效率和代码质量。
+3. 负责系统核心业务模块的样式开发与优化，利用AI优化页面主题，保证页面美观和结构清晰。
+4. 负责前后端接口对接工作，参与接口设计规划，完成接口联调测试，保证系统功能的稳定性和性能表现。
+5. 负责AI对话功能的开发，包括前端界面设计和交互逻辑实现，实现Markdown文本的不同组件渲染设计，提升了用户体验。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>综合评估可视化管理项目</h3> <span style="text-align: right">2021.10-2025.8</span>
+</div>
+
+- **项目概述**：该项目结合第三方提供的算法，通过对人员信息进行收集、统计和预测，实现对人员的管理。
+- **技术栈**：Umi、Antd、Typescript、React、Nodejs、Nestjs
+
+1. 负责前端项目全流程工作，包括工程化环境搭建、功能开发、性能优化及维护升级，确保项目稳定运行。
+2. 使用Jenkins和Docker实现自动化部署和持续集成，显著提升开发效率。
+3. 使用 AntV X6 和 ECharts 实现数据可视化展示，提供流畅的交互体验和直观的数据分析。
+4. 负责集成Onlyoffice文档渲染组件，并开发各种的docx插件，实现文档表达式渲染、图片渲染、内容编辑插件等功能。 
+5. 通过代码压缩、Tree Shaking和懒加载等优化手段，有效提升了页面性能和用户体验。
+6. 使用NestJS搭建中间层服务，实现统一认证和接口代理，简化多应用系统的接入和管理。
+7. 负责封装多个高复用组件和自定义hooks，包括表单组件、弹窗hook、树形加载hook等，显著提升团队开发效率。
+8. 引入并配置Prettier、ESLint、Husky等工具，规范代码风格，提升代码质量。
+9. 通过路由懒加载和组件按需加载，将首屏加载时间减少50%，通过预加载手段将表单加载时间从10秒优化至1秒。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>综合评估可视化大屏项目</h3> <span style="text-align: right">2022.10-2023.10</span>
+</div>
+
+- **项目概述**：基于 ECharts 开发的数据可视化大屏，展示 综合评估可视化管理项目 的核心数据和统计指标。
+- **技术栈**：React、Echarts、Typescript、Nodejs、Nestjs
+
+1. 负责项目前端架构搭建，抽离封装通用组件和Hooks库。
+2. 配置 Docker 和 Jenkins 自动化部署流程，实现持续集成和交付。
+3. 负责项目功能与样式开发，实现自动滚动容器、分层地图展示、文字滚动等交互效果
+4. 使用 NestJS 构建中间层服务，实现用户认证和接口代理功能。
+5. 采用多种前端优化手段，提升页面加载性能和用户体验。
+6. 设计大屏适配方案，使用 scale 缩放方案实现多分辨率自适应，支持4K显示器完美展示。
+7. 采用图片懒加载、组件按需渲染等优化手段，首屏加载时间控制在2秒内。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>"表达"管理低代码平台</h3> <span style="text-align: right">2021.12-2025.8</span>
+</div>
+
+- **项目概述**：该项目可通过简单的页面配置，实现功能较完善的表单填报系统，提高效率并降低开发成本。
+- **技术栈**：Vue、Typescript、Element-UI、Nodejs、Nestjs
+
+1. 负责组件库开发，使用Webpack构建低代码组件库，设计标准开发模板，实现多组件库动态加载，提升了开发效率和代码复用。
+2. 负责集成端页面的开发维护，通过重写postMessage方法实现Android与Web端通信，优化开发效率。
+3. 优化集成页面性能，关闭prefetch避免连接拥堵，启用强缓存提升iframe访问速度，改善用户体验。
+4. 基于Lerna搭建和维护中间层服务库，实现多包管理和版本控制，重构和优化用户认证与登录流程，提升系统安全性和用户体验，同时显著降低了维护成本。
+5. 参与设计并实现表单设计器核心功能，支持拖拽布局、条件渲染、数据联动等特性，提升表单配置效率。
+
+<div style="display: flex; justify-content: space-between;margin: 10px 0 5px 0;">
+    <h3>其他项目经验</h3>
+</div>
+
+包括 播比邻管理平台及直播小程序、中清科华企业官网、流转宝小程序、第七次人口普查后台管理系统、蓝鲸运维拓扑可视化系统、成都调查总队网点采集系统 以及 北京优炫银行BMS系统 等。技术栈涉及**微信小程序、Uniapp、React Native、Vue** 等主流框架。

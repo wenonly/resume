@@ -27,7 +27,8 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: resume.pdf
+          files: |
+            dist/*.pdf
           name: Resume PDF
           tag_name: v${{ github.run_number }}
           draft: false

@@ -1,0 +1,11 @@
+{
+  // Markdown 预览样式（路径相对于工作区根目录）
+  "markdown.styles": ["lapis-cv.css"],
+  // Markdown PDF 插件导出配置（备选，推荐用 pnpm run build）
+  "markdown-pdf.headerTemplate": "",
+  "markdown-pdf.footerTemplate": "",
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-pdf.margin.top": "1cm",
+  "markdown-pdf.margin.right": "1cm",
+  "markdown-pdf.margin.left": "1cm"
+}

@@ -1,46 +1,50 @@
 # 陶文的个人简历
 
-## 使用方法
+支持**多份简历**同时维护：在 [resumes/](resumes) 目录下，每个 `.md` 文件即一份简历，构建时自动全部转成 PDF。
 
-1. 在 VSCode 中打开该文件夹，并安装插件 Markdown PDF。
-2. VSCode 顶层需加配置 .vscode > settings.json 配置文件，配置如下：
-```json
-{
-    "markdown.styles": [
-        "./resume/lapis-cv.css" // 对应项目的样式文件
-    ],
-    "markdown-pdf.headerTemplate": "",
-    "markdown-pdf.footerTemplate": "",
-    "markdown-pdf.displayHeaderFooter": false,
-    "markdown-pdf.margin.top": "1cm",
-    "markdown-pdf.margin.right": "1cm",
-    "markdown-pdf.margin.left": "1cm"
-}
+## 目录结构
+
 ```
-3. 打开模版文件 template.md 进行内容编辑，右上角点击 Open Preview 图标可进行实时预览。右键选择 Markdown PDF - Export (pdf) 即可导出 PDF 文件。
+resumes/          简历源文件（markdown）
+  frontend.md     前端求职版
+  agent.md        AI Agent 全栈求职版
+dist/             构建产物（gitignore，不入库）
+  frontend.pdf
+  agent.pdf
+lapis-cv.css      样式（多份简历共用）
+src/              构建脚本
+```
 
-## 自定义样式
+## 编辑简历
 
-修改 lapis-cv.css 即可。具体样式可参考上述 Typora 部分。
+直接编辑 [resumes/](resumes) 下的 `.md` 文件即可。新增一份简历只需丢一个新的 `.md` 进去，无需改任何代码或配置。
 
-其中页边距需要在 VSCode 设置中修改：
-
-直接修改 .vscode/settings.json 文件中的 markdown-pdf.margin 相关项。
-
-另外的，还可以通过 GUI 进行修改：
-
-打开 VSCode 设置，选中 Workspace 标签页。
-搜索 Markdown-pdf › Margin，并修改四边边距。
-无需重启 VSCode，重新生成 PDF 即可生效。
-
-## 直接编译
+## 本地构建
 
 ```bash
 pnpm install
-pnpm run build
+pnpm run build                         # 构建全部简历 -> dist/*.pdf
+node src/main.js resumes/frontend.md   # 只构建指定的一份
 ```
-编译后会生成 resume.pdf 文件。
+
+## 自动发布
+
+推送到 `main` 分支会触发 [GitHub Action](.github/workflows/build_deploy.yml)：自动构建 [resumes/](resumes) 下全部简历，并把 `dist/*.pdf` 发布到一个 Release。
+
+## 自定义样式
+
+修改 [lapis-cv.css](lapis-cv.css) 即可，所有简历共用同一份样式。
+
+## VSCode 预览（可选）
+
+如果想直接在 VSCode 里实时预览并应用项目样式：
+
+1. 安装插件 **Markdown PDF**。
+2. 项目根目录已配好 [.vscode/settings.json](.vscode/settings.json)，预览会自动应用 [lapis-cv.css](lapis-cv.css) 样式（路径相对于工作区根目录，与 `.md` 所在子目录无关）。
+3. 打开 [resumes/](resumes) 下任意 `.md`，右上角 **Open Preview** 实时预览。
+
+> 导出 PDF 推荐统一用 `pnpm run build`，保证多份简历产物一致。Markdown PDF 插件右键导出仅作备选，样式/分页可能与脚本构建略有差异。
 
 ## 项目参考
 
-[https://github.com/BingyanStudio/LapisCV](https://github.com/BingyanStudio/LapisCV)
+- [LapisCV](https://github.com/BingyanStudio/LapisCV)
