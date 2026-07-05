@@ -23,8 +23,8 @@ const path = require("path");
  * @returns {Promise<string>} Path to the generated PDF file
  */
 async function convertHtmlToPdf(htmlContent, options) {
-  // Create temporary HTML file
-  const tmpDir = path.dirname(options.outputPath);
+  // 临时 HTML 写在项目根目录，使 CSS 中的相对路径（lapis-cv/ 字体、图片等）能正确解析
+  const tmpDir = path.join(__dirname, "..");
   const tmpHtmlPath = path.join(tmpDir, `tmp_${Date.now()}.html`);
   fs.writeFileSync(tmpHtmlPath, htmlContent);
 
