@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '22'
       - name: Setup pnpm
-        run: npm install pnpm -g
+        run: corepack enable
       - name: Install dependencies
         run: pnpm install
       - name: Build PDF
