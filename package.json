@@ -22,5 +22,8 @@
     "markdown-it-named-headers": "^0.0.4",
     "markdown-it-plantuml": "^1.4.1",
     "puppeteer": "^24.4.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["puppeteer"]
   }
 }
